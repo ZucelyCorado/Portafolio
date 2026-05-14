@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zucely J. Corado</title>
+    <link rel="shortcut icon" href="./Img/yo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="isdy-wrapper">
+                <div class="isdy" id="isdy">
+                    <img src="./Img/wall.png" alt="wall">
+                    <p>Zucely Jumeily Corado Cruz</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="content"> 
+            <section class="Basic-info">
+                <div class="circulo1"></div>
+                <div class="circulo2"></div>
+                <div class="circulo3"></div>
+                <div class="circulo4"></div>
+                <div class="circulo5"></div>
+                <h1>Zucely Jumeily Corado Cruz</h1>
+                <h2>Estudiante de Ingeniería en Sistemas y ciencias de la computación</h2>
+                <h2>Sección "A"</h2>
+                <p>Carnet: 5090-26-2117</p>
+            </section>
+
+            <section class="info">
+                <div id="pestaña" class="pestaña3"></div>
+                <div id="pestaña" class="pestaña2" ></a></div>
+                <div id="pestaña" class="sombra" ></div>
+                <div class="folder"></div>
+                <div class="pestaña1"></div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <p>&copy; Zucely J. Corado - 5090-26-2117</p>
+        </div>
+    </div>
+
+   
+<!--- ---- ------ -- - - - --            -------           -----        ---- -->
+    <script>
+        const isdy = document.getElementById("isdy");
+        const wrapper = document.querySelector(".isdy-wrapper");
+        const trigger = wrapper.offsetHeight;
+        window.addEventListener("scroll", () => {
+        if(window.scrollY >= trigger){
+            isdy.classList.add("active");
+        } else {
+            isdy.classList.remove("active");
+        }
+        });
+    </script>
+</body>
+</html>
