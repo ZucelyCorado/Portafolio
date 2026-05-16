@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Changa+One:ital@0;1&family=Dancing+Script:wght@400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fustat:wght@200..800&family=Matemasie&family=Petemoss&family=Rakkas&family=Rock+Salt&family=Rubik+Vinyl&family=Special+Gothic+Expanded+One&family=Zain:wght@200;300;400;700;800;900&display=swap');
 
 body{
-    background-color: #1b2925;
+    background-color: #1C1D1D;
     margin: 0;
-    min-height: 100vh;
+    padding: 0;
 }   
 
 .container{
@@ -20,90 +20,98 @@ body{
 header{
     grid-area: header;
 }
+
 .content{
     grid-area: content;
-    margin: 3vw;
+    margin: 5vw;
+    padding-top: 140px;
 }
+
 /*isla dynamic*/
 .isdy-wrapper{
     width: 100%;
-    height: 100vh;
+    position: relative;
 }
 
 .isdy{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    transform-origin: top center;
-    transition: all .35s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.isdy img{
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    
-}
-
-.isdy.active{
     position: fixed;
+    z-index: 9999;
     width: 280px;
     height: 60px;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%) scale(1);
+    transform: translateX(-50%);
     border-radius: 40px;
-    z-index: 1000;
+    box-shadow: 0 20px 60px #000000;
+    background: #1C1D1D;
 }
 
-.isdy.active::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:
-    rgba(0,0,0,0.35);
-    backdrop-filter: blur(10px);
+.isdy img{
+    position: absolute;
+    height: 40%;
+    top: 25%;
+    left: 5%;
+}
+
+.imgportafolio{
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.imgportafolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 /*isla dynamic*/
 
 .Basic-info{
     position: relative;
-    width: 1fr;
-    height: 1fr;
+    width: auto;
+    max-width: 100%;
+    padding: 3rem;
     background-color: #9c9c9c;
     border-radius: 20px;
     box-shadow: 0px 0px 50px #000000;
-    overflow: hidden;
 }
 
-h1{
+.Basic-info h1{
     font-weight: bold;
     font-family: sans-serif;
     font-size: 3vw;
     color: #FFFFFF;
-    position: absolute;
-    top: 1vw;
-    right: 4%;
+    position: static;
+    margin: 0 0 1rem 0;
+    text-align: right;
     text-shadow: 0px 5px 0 #000000;
 }
 
-h2{
+.Basic-info h2{
     font-family: sans-serif;
     font-size: 1.5vw;
     color: #FFFFFF;
-    position: relative;
-    top:  6.5vw;
-    right: 2.5vw;
-    text-shadow: 0px 5px 0 #000000;
+    position: static;
+    margin: 0 0 0.75rem 0;
     text-align: right;
+    text-shadow: 0px 5px 0 #000000;
 }
 
+.Basic-info p{
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    position: static;
+    margin: 0 0 0.75rem 0;
+    text-align: right;  
+    text-shadow: 0px 5px 0 #000000;
+}
 
 /*circulos*/
 .circulo1, .circulo2, .circulo3, .circulo4, .circulo5 {
     position: absolute;
-    background-color: #1b2925;
+    background-color: #1C1D1D;
     border-radius: 50%;
     box-shadow: inset 0 0 30px #000000;
 }
@@ -145,27 +153,64 @@ h2{
 
 .info{
     position: relative;
-    width: 1fr;
+    top: 10%;
+    width: auto;
     height: auto;
-    padding: 1fr;
+    padding: 3rem;
     min-height: 500px;
     background-color: #9c9c9c;
     border-radius: 20px;
     box-shadow: 0px 0px 50px #000000;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.info h1 { 
+    color: white;
+    font-family: sans-serif;
 }
 
+.info dl { 
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.info dl dt {
+    color: #ffffff;
+    margin: 1.5rem 0 0.5rem;
+    font-weight: 700;
+}
+
+.info dl dd {
+    margin: 0 0 0.75rem 1rem;
+    color: #f1f1f1;
+}
+
+.infopersonal{
+    position: relative;
+    top: 5%;
+    width: auto;
+    height: auto;
+    padding: 3rem;
+    background-color: #9c9c9c;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px #000000;
+}
+
+.infopersonal p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+}
+
+
 /*folder*/
+
 #pestaña{
     width: 47px;
-    height: 200px;
+    height: 250px;
     background: #A9927D;
     border-radius: 0 15px 15px 0;
-    position: absolute;
+    position: relative;
 }
 
 .sombra{
@@ -183,8 +228,8 @@ a{
     height: 200px;
     background: #5E503F;
     border-radius: 0 15px 15px 0;
-    position: absolute;
-    top: 25%;
+    position: relative;
+    top: 15%;
     left: 90%;
 }
 

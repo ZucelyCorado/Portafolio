@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zucely J. Corado</title>
-    <link rel="shortcut icon" href="./Img/yo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./Img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="isdy-wrapper">
-                <div class="isdy" id="isdy">
-                    <img src="./Img/wall.png" alt="wall">
-                    <p>Zucely Jumeily Corado Cruz</p>
-                </div>
+                <div class="isdy"><a href="./index.html"><img src="./Img/casa.png" alt="casa"></a></div>
+                <div class="imgportafolio"><img src="./Img/img.jpg" alt=""></div>
             </div>
         </header>
 
@@ -32,33 +30,42 @@
                 <p>Carnet: 5090-26-2117</p>
             </section>
 
-            <section class="info">
-                <div id="pestaña" class="pestaña3"></div>
-                <div id="pestaña" class="pestaña2" ></a></div>
-                <div id="pestaña" class="sombra" ></div>
-                <div class="folder"></div>
-                <div class="pestaña1"></div>
+            <section class="infopersonal">
+                <p>Mi creatividad, atención al detalle y dedicación se ven reflejados en cada tarea que realizo. Me considero una persona responsable y comprometida con alcanzar la mejor versión de mí en mi trabajo, como por ejemplo: mi deseo de aprender inglés para hablarlo de forma nativa y en mis estudios para obtener un título en Ingeniería en Sistemas, y más adelante tener otra carrera la cual me permita ser una persona más adaptable y creativa. No obstante, busco oportunidades donde pueda crecer y aprender profesionalmente, aportando lo mejor de mí tanto en el desarrollo de las labores como en mi crecimiento personal. </p>
             </section>
-        </div>
+            <section class="info">
+                <div>
+                    <h1>Experiencia Estudiantil</h1>
+                    <dl>
+                        <dt>Bachillerato en ciencias y letras con orientación en computación</dt>
+                        <dd>Colegio Mixto Caliope, San Miguel Petapa</dd>
+                        <dd>2024-2025</dd>
+                        <dt>1ro, 2do y 3ro Básico </dt>
+                        <dd>Colegio Mixto Caliope, San Miguel Petapa</dd>
+                        <dd>2021-2023</dd>
+                        <dt>Primaria</dt>
+                        <dd>Colegio Mixto Caliope, San Miguel Petapa</dd>
+                        <dd>2015-2020</dd>
+                        <dt>Preprimaria</dt>
+                        <dd>Colegio “El Álamo”, San Miguel Petapa </dd>
+                        <dd>2011-2014</dd>
+                    </dl>
+                </div>
+                <aside>
+                    <div id="pestaña" class="pestaña3"></div>
+                    <div id="pestaña" class="pestaña2"></div>
+                    <div id="pestaña" class="sombra"></div>
+                    <div class="folder"></div>
+                    <div class="pestaña1"></div>
+                </aside>
+            </section>
 
+        </div>
         <div class="footer">
             <p>&copy; Zucely J. Corado - 5090-26-2117</p>
         </div>
-    </div>
 
-   
-<!--- ---- ------ -- - - - --            -------           -----        ---- -->
-    <script>
-        const isdy = document.getElementById("isdy");
-        const wrapper = document.querySelector(".isdy-wrapper");
-        const trigger = wrapper.offsetHeight;
-        window.addEventListener("scroll", () => {
-        if(window.scrollY >= trigger){
-            isdy.classList.add("active");
-        } else {
-            isdy.classList.remove("active");
-        }
-        });
-    </script>
+    </div>
+    
 </body>
 </html>
