@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./Img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
+    
 </head>
 <body>
     <div class="container">
@@ -17,38 +18,40 @@
                 
             </div>
         </header>
-        <div class="content"> 
-            <section class="Basic-info">
-                <div class="circulo1"><img src="./Img/yo.JPEG" alt=""></div>
-                <div class="circulo2"></div>
-                <div class="circulo3"></div>
-                <div class="circulo4"></div>
-                <div class="circulo5"></div>
+        <section class="content"> 
+            <div class="Basic-info">
+                <div id="circulos" class="circulo1"><img src="./Img/yo.JPEG" alt=""></div>
+                <div id="circulos" class="circulo2"></div>
+                <div id="circulos" class="circulo3"></div>
+                <div id="circulos" class="circulo4"></div>
+                <div id="circulos" class="circulo5"></div>
                 <h1>Zucely Jumeily Corado Cruz</h1>
                 <h2>Estudiante de Ingeniería en Sistemas y ciencias de la computación</h2>
                 <h2>Sección "A"</h2>
                 <h2>Carnet: 5090-26-2117</h2>
-            </section>
+            </div>
 
-            <section class="infopersonal">
+            <div class="infopersonal">
                 <p>Mi creatividad, atención al detalle y dedicación se ven reflejados en cada tarea que realizo. Me considero una persona responsable y comprometida con alcanzar la mejor versión de mí en mi trabajo, como por ejemplo: mi deseo de aprender inglés para hablarlo de forma nativa y en mis estudios para obtener un título en Ingeniería en Sistemas, y más adelante tener otra carrera la cual me permita ser una persona más adaptable y creativa. No obstante, busco oportunidades donde pueda crecer y aprender profesionalmente, aportando lo mejor de mí tanto en el desarrollo de las labores como en mi crecimiento personal. </p>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <div class="cajita">
+        <section id="info"  class="cajita">
             <aside class="sidebar-left">
                 <h3>Otros Datos... </h3>
                 <ul>
-                    <li><a href="./trayecto.html">Trayecto Estudiantil</a></li>
-                    <li><a href="./hobbies.html">Hobbies</a></li>
-                    <li><a href="./idiomas.html">Idiomas</a></li>
-                    <li><a href="./Habilidades.html">Habilidades</a></li>
+                    <li><a href="./trayecto.html"><img src="./Img/trayecto.png" alt="">Trayecto Estudiantil</a></li>
+                    <li><a href="./hobbies.html"><img src="./Img/hobbies.png" alt="">Hobbies</a></li>
+                    <li><a href="./idiomas.html"><img src="./Img/idiomas.png" alt="">Idiomas</a></li>
+                    <li><a href="./Habilidades.html"><img src="./Img/habilidades.png" alt="">Habilidades</a></li>
                 </ul>
             </aside>
 
             <main class="resto">
-                <h2>Proyectos actuales</h2>
-                <p> Estos cuentan con secciones para cada curso.</p>
+                <div class="title">
+                    <h2>Proyectos actuales</h2>
+                    <p> Estos cuentan con secciones para cada curso.</p>
+                </div>
                 <hr><br>
                 <div class="cards">
                     <div class="card"><a href="./Desarrollo.html"><img src="./Img/desa.png" alt="desarrollo"><h2>Desarrollo Humano y Profesional</h2></a></div>
@@ -70,17 +73,19 @@
                 </a>
 
             </aside>
-        </div>
-
-        <div class="contacto">
-
-        </div>
+        </section>
         
-        <div class="footer">
-            <p>&copy; Zucely J. Corado - 5090-26-2117</p>
-        </div>
 
+        <section class="contacto">
+            <section class="caja">
+                <h1>Contacto</h1>
+            </section>
+
+        </section>
+        
+        <section class="footer">
+            <p>&copy; Zucely J. Corado - 5090-26-2117</p>
+        </section>
     </div>
-    
 </body>
 </html>
