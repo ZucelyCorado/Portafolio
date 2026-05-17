@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #1C1D1D
+}   
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas: 
+    "foto foto foto"
+    "regresa regresa regresa"
+    "proyectos proyectos proyectos"
+    "footer footer footer";
+}
+
+.regresa{
+    grid-area: regresa;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.foto{
+    grid-area: foto;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*isla dynamic*/
+.isdy-wrapper{
+    width: 100%;
+    position: relative;
+}
+
+.isdy{
+    position: fixed;
+    z-index: 9999;
+    width: 280px;
+    height: 60px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    box-shadow: 0 20px 60px #000000;
+    background: #1C1D1D;
+    transition: transform 0.3s;
+}
+
+.isdy:hover{
+    transform: translateX(-50%) scale(1.1);
+}
+
+.isdy img{
+    position: absolute;
+    height: 40%;
+    top: 25%;
+    left: 5%;
+}
+
+.imgportafolio{
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.imgportafolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*isla dynamic*/
+
+.cajita {
+    grid-area: proyectos;
+    display: grid;
+    min-height: auto;
+    grid-template-columns: 350px 1fr 225px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "left resto right";
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 4rem 4rem 2rem 4rem;
+}
+
+.sidebar-left { 
+    color: #FFFFFF;
+    grid-area: left; 
+    background-color: #9c9c9c; 
+    padding: 15px; 
+    border-radius: 20px;
+    box-shadow: 4px 4px 30px #000000; 
+    transition: transform 0.1s;
+}
+
+.sidebar-left:hover{
+    transform: scale(1.02);
+}
+
+.resto { 
+    grid-area: resto; 
+    background-color: #9c9c9c; 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    color: #FFFFFF;
+    box-shadow: 4px 4px 30px #000000; 
+    transition: transform 0.1s;
+}
+
+.resto:hover{
+    transform: scale(1.009);
+}
+
+.sidebar-right { 
+    color: #FFFFFF;
+    grid-area: right; 
+    background-color: #9c9c9c; 
+    padding: 15px; 
+    border-radius: 20px; 
+    box-shadow: 4px 4px 30px #000000; 
+    transition: transform 0.1s;
+}
+
+.sidebar-right:hover{
+    transform: scale(1.02);
+}
+
+h2, h3 { 
+    margin-top: 0; 
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+li { 
+    margin-bottom: 10px; 
+}
+
+a { 
+    color: #ffffff;
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card{
+    width: 250px;
+    padding: 1rem;
+    background: #d3cfcf;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px; 
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.footer{
+    grid-area: footer;
+    padding: 60px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.35);
+}
