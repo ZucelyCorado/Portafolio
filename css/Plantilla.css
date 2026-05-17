@@ -213,6 +213,7 @@ iframe {
 }
 
 .footer{
+    font-size: 35px;
     grid-area: footer;
     padding: 60px;
     text-align: center;
